@@ -6,12 +6,14 @@ import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import autoprefixer from 'autoprefixer'
 import WindiCSS from 'vite-plugin-windicss'
+import AutoImport from 'unplugin-auto-import/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     WindiCSS(),
+    AutoImport(),
     Components({ resolvers: [AntDesignVueResolver()] })
   ],
   css: {
