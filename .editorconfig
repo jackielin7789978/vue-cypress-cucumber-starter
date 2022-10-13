@@ -1,0 +1,13 @@
+root = true
+
+[*] #適用於所有文件
+charset = utf-8
+indent_style = space #tab | space
+indent_size = 2
+end_of_line = lf #換行類型(lf | cr | crlf)
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md] #只適用於 .md 檔案
+max_line_length = off
+trim_trailing_whitespace = false
