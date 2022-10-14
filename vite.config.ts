@@ -13,7 +13,9 @@ export default defineConfig({
   plugins: [
     vue(),
     WindiCSS(),
-    AutoImport(),
+    AutoImport({
+      imports: ['vue', 'vue-router', '@vueuse/core']
+    }),
     Components({ resolvers: [AntDesignVueResolver()] })
   ],
   css: {
